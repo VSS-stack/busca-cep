@@ -33,6 +33,8 @@ p {
 main {
     background-color: var(--bege);
     height: 75vh;
+    padding: .75rem .5rem;
+    box-sizing: border-box;
 }
 
 form {
@@ -42,5 +44,21 @@ form {
 
 label {
     font-weight: 600;
+    font-size: 1.2rem;
     color: var(--azul-claro);
+    margin: .3rem 0;
+}
+
+input {
+    height: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+select {
+    height: 1.52rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    height: 2rem;
 }
