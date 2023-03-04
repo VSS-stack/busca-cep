@@ -5,3 +5,42 @@
     --creme: #F8F4EA;
 }
 
+body {
+    height: 100vh;
+    font-family: Montserrat, 'sans-serif';
+}
+
+header {
+    background-color: var(--azul-claro);
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--cinza-claro);
+    margin: 1rem 0;
+}
+
+p {
+    color: var(--creme);
+}
+
+main {
+    background-color: var(--bege);
+    height: 75vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    color: var(--azul-claro);
+}
