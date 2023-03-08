@@ -60,5 +60,18 @@ select {
 }
 
 .btn {
-    height: 2rem;
+    height: 2.5rem;
+    font-family: Montserrat, 'sans-serif';
+    font-weight: 600;
+    font-size: 1.15rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-color: var(--azul-claro);
+    border-radius: 5px;
+    color: var(--azul-claro);
+    background-color: transparent;
+}
+
+.btn:active {
+    transform: scale(1.03);
 }
