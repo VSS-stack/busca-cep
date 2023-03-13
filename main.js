@@ -1,12 +1,21 @@
 const botao = document.getElementById('botao');
-const rua = document.getElementById('rua');
-const cidade = document.getElementById('cidade');
-const estado = document.getElementById('estado');
+const formRua = document.getElementById('rua');
+const formCidade = document.getElementById('cidade');
+const formEstado = document.getElementById('estado');
 
 botao.addEventListener('click', (event) => {
     event.preventDefault();
 
-    console.log(rua.value);
-    console.log(cidade.value);
-    console.log(estado.value);
+    var rua = formRua.value;
+    var cidade = formCidade.value;
+    var estado = formEstado.value;
+
+    formRua.value = '';
+    formCidade.value = '';
+    formEstado.value = '';
+
+    var buscaCep = fetch(`https://viacep.com.br/ws/${estado}/${cidade}/${rua}/json/`)
+    .then((r) => {
+        console.log(r);
+    });
 })
