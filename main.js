@@ -15,7 +15,8 @@ botao.addEventListener('click', (event) => {
     formEstado.value = '';
 
     var buscaCep = fetch(`https://viacep.com.br/ws/${estado}/${cidade}/${rua}/json/`)
-    .then((r) => {
-        console.log(r);
+    .then(response => response.json())
+    .then(data => {
+        console.log(data[0].cep);
     });
 })
