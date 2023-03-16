@@ -18,7 +18,6 @@ botao.addEventListener('click', (event) => {
     var buscaCep = fetch(`https://viacep.com.br/ws/${estado}/${cidade}/${rua}/json/`)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
         if (data.length === 0) {
             main.innerHTML += `
                 <h2>0 Resultados Encontrados</h2>
