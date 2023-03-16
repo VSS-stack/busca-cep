@@ -35,6 +35,8 @@ main {
     height: 75vh;
     padding: .75rem .5rem;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 form {
@@ -83,6 +85,24 @@ h2 {
     margin: 2rem 0 1rem;
 }
 
-.resultados {
+.aviso1 {
     margin-bottom: 1rem;
+}
+
+.aviso2 {
+    margin-bottom: 2rem;
+}
+
+.resultados {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        align-items: center;
+    }
+
+    form, .resultados {
+        width: 752px;
+    }
 }
