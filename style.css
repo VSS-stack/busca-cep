@@ -26,7 +26,7 @@ h1 {
     margin: 1rem 0;
 }
 
-p {
+.sub-titulo {
     color: var(--creme);
 }
 
@@ -74,4 +74,15 @@ select {
 
 .btn:active {
     transform: scale(1.03);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--azul-claro);
+    margin: 2rem 0 1rem;
+}
+
+.resultados {
+    margin-bottom: 1rem;
 }
