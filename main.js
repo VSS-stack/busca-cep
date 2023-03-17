@@ -28,7 +28,6 @@ botao.addEventListener('click', (event) => {
         } else {
             main.innerHTML += `<h2>${data.length} Resultados Encontrados</h2>`;
             main.innerHTML += '<p class="aviso2">Atualize a página para uma nova busca</p>';
-            main.innerHTML += '<style>main {height: auto;}</style>';
             main.innerHTML += '<style>form {display: none;}</style>';
         }
         data.forEach((data) => {

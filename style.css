@@ -8,6 +8,7 @@
 body {
     height: 100vh;
     font-family: Montserrat, 'sans-serif';
+    background-color: var(--bege);
 }
 
 header {
@@ -32,7 +33,6 @@ h1 {
 
 main {
     background-color: var(--bege);
-    height: 75vh;
     padding: .75rem .5rem;
     box-sizing: border-box;
     display: flex;
